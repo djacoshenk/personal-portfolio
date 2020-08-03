@@ -1,0 +1,8 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/djacoshenk/personal-portfolio.git",
+  "author": "Danny Jacoshenk <daniel.jacoshenk@gmail.com>",
+  "license": "MIT"
+}
