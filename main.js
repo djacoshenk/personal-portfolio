@@ -1,0 +1,17 @@
+const commits = document.querySelector('.commits');
+const commitsBox = document.querySelectorAll('.commits-box');
+const colors = ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
+
+function getRandomColor() {
+  const randomIndex = Math.floor(Math.random() * colors.length);
+  return colors[randomIndex];
+}
+
+function fillCommits() {
+  for (let i = 0; i < commitsBox.length; i++) {
+    commitsBox[i].style.backgroundColor = getRandomColor();
+  }
+}
+
+document.addEventListener('load', fillCommits());
+document.addEventListener('load', setInterval(fillCommits, 1000));
