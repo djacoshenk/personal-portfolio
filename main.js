@@ -8,9 +8,7 @@ function getRandomColor() {
 }
 
 function fillCommits() {
-  for (let i = 0; i < commitsBox.length; i++) {
-    commitsBox[i].style.backgroundColor = getRandomColor();
-  }
+  commitsBox.forEach((e) => (e.style.backgroundColor = getRandomColor()));
 }
 
 document.addEventListener('load', fillCommits());
