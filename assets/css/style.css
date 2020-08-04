@@ -106,6 +106,10 @@ html {
   height: 100%;
 }
 
+.blog-post:hover {
+  transform: translate(0, -2px);
+}
+
 .blog-post {
   display: flex;
   flex-direction: column;
@@ -117,13 +121,6 @@ html {
   border-radius: 5%;
   margin: 1rem;
   transition: all 0.3s;
-}
-
-.blog-post:hover {
-  transform: translate(0, -5px);
-}
-
-.blog-container a {
   text-decoration: none;
 }
 
@@ -135,6 +132,15 @@ html {
 
 .blog-container p {
   color: #f8f8f2;
+}
+
+.work-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+  text-align: center;
 }
 
 .contact-container {
