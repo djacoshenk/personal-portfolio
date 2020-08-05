@@ -1,13 +1,13 @@
 const commits = document.querySelector('.commits');
-const colors = ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
 let hasCommits = false;
 
-function getRandomColor() {
+const getRandomColor = function () {
+  const colors = ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
   const randomIndex = Math.floor(Math.random() * colors.length);
   return colors[randomIndex];
-}
+};
 
-function fillCommits() {
+const fillCommits = function () {
   // if there are commits, remove them before appending new commits
   if (hasCommits) {
     removeCommits();
@@ -30,14 +30,14 @@ function fillCommits() {
   }
 
   hasCommits = true;
-}
+};
 
-function removeCommits() {
+const removeCommits = function () {
   for (let i = 0; i < 20; i++) {
     const commitsCol = document.querySelector('.commits-col');
     commits.removeChild(commitsCol);
   }
-}
+};
 
 document.addEventListener('load', fillCommits());
 document.addEventListener('load', setInterval(fillCommits, 1000));
