@@ -132,13 +132,13 @@ html {
   transform: translate(0, -2px);
 }
 
-.blog-container h3 {
+.blog-post h3 {
   color: #ff79c6;
   font-size: 1.4rem;
   padding: 1rem 0;
 }
 
-.blog-container p {
+.blog-post p {
   color: #f8f8f2;
 }
 
@@ -153,7 +153,7 @@ html {
   text-align: center;
 }
 
-.project {
+.work-project {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -168,17 +168,17 @@ html {
   padding: 1rem;
 }
 
-.project:hover {
+.work-project:hover {
   transform: translate(0, -2px);
 }
 
-.work-container h3 {
+.work-project h3 {
   color: #ff79c6;
   font-size: 1.4rem;
   padding: 1rem 0;
 }
 
-.work-container p {
+.work-project p {
   color: #f8f8f2;
 }
 
@@ -192,7 +192,7 @@ html {
   height: 85%;
 }
 
-.contact-container form {
+.contact-form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -204,11 +204,11 @@ html {
   padding: 0 2rem;
 }
 
-.contact-container > form > div {
+.contact-form div {
   width: 100%;
 }
 
-.contact-container > form input,
+.contact-form input,
 textarea {
   width: 100%;
   background-color: #282a36;
@@ -222,6 +222,13 @@ textarea {
   color: #f8f8f2;
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
 .button button {
   width: 50%;
   background-color: #ff79c6;
@@ -233,13 +240,6 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   color: #282a36;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
 }
 
 /* Footer Styles */
@@ -282,7 +282,7 @@ textarea {
     font-size: 1.5rem;
   }
 
-  .contact-container form {
+  .contact-form {
     width: 400px;
   }
 }
@@ -302,7 +302,7 @@ textarea {
     text-align: center;
   }
 
-  .project {
+  .work-project {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
