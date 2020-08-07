@@ -44,9 +44,9 @@ html {
 }
 
 .header a {
-  text-decoration: none;
   color: #f1fa8c;
   font-size: 1rem;
+  text-decoration: none;
 }
 
 .header a:hover {
@@ -117,7 +117,7 @@ html {
 .blog-post {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 300px;
   width: 300px;
@@ -132,14 +132,21 @@ html {
   transform: translate(0, -2px);
 }
 
+.blog-post i {
+  font-size: 2rem;
+  color: #f1fa8c;
+  margin-top: 1rem;
+}
+
 .blog-post h3 {
   color: #ff79c6;
   font-size: 1.4rem;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .blog-post p {
   color: #f8f8f2;
+  padding: 0 1rem;
 }
 
 /* Work Page Styles */
@@ -156,7 +163,7 @@ html {
 .work-project {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   height: 575px;
   width: 300px;
@@ -182,6 +189,35 @@ html {
   color: #f8f8f2;
 }
 
+.work-project a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  background-color: #ff79c6;
+  border-radius: 5px;
+  color: #282a36;
+}
+
+.work-project-tech i {
+  margin: 0 1rem;
+  font-size: 2rem;
+}
+
+.fa-html5 {
+  color: #ffb86c;
+}
+
+.fa-css3-alt {
+  color: #8be9fd;
+}
+
+.fa-js {
+  color: #f1fa8c;
+}
+
+.fa-react {
+  color: #8be9fd;
+}
+
 /* Contact Page Styles */
 
 .contact-container {
@@ -194,7 +230,7 @@ html {
 
 .contact-form {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   justify-content: space-around;
   align-items: center;
   height: 500px;
@@ -295,18 +331,10 @@ textarea {
 
   .work-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     align-items: center;
-    height: 85%;
-    text-align: center;
-  }
-
-  .work-project {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    min-height: 85%;
   }
 }
 
@@ -327,5 +355,9 @@ textarea {
     justify-content: center;
     align-items: center;
     height: 100%;
+  }
+
+  .work-container {
+    height: 85%;
   }
 }
