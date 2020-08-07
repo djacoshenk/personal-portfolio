@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" type="image/ico" href="favicon.ico" />
   </head>
   <body>
     <header class="header">
@@ -27,16 +28,16 @@
         data-netlify="true"
       >
         <div class="name">
-          <p>Name</p>
-          <input type="text" name="name" />
+          <label for="name">Name</label></br>
+          <input type="text" name="name" id="name" />
         </div>
         <div class="email">
-          <p>Email</p>
-          <input type="email" name="email" />
+          <label for="email">Email</label></br>
+          <input type="email" name="email" id="email" />
         </div>
         <div class="message">
-          <p>Message</p>
-          <textarea style="resize: none;" name="message"></textarea>
+          <label for="message">Message</label></br>
+          <textarea style="resize: none;" name="message" id="message"></textarea>
         </div>
         <div class="button">
           <button type="submit">Submit</button>
