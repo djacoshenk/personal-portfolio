@@ -31,22 +31,12 @@ html {
 }
 
 .nav-bar {
-  width: 50%;
-  height: 100%;
-}
-
-.nav-bar ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 50%;
   height: 100%;
-}
-
-.nav-bar li {
-  list-style: none;
-  margin: 0 1rem;
 }
 
 .nav-bar a {
@@ -294,7 +284,7 @@ textarea {
   height: 10%;
 }
 
-.footer ul {
+.social-links {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -302,18 +292,10 @@ textarea {
   width: 25%;
 }
 
-.footer li {
-  list-style: none;
-  margin: 0 2rem;
-}
-
-.footer a {
-  text-decoration: none;
+.social-links a {
   color: #f1fa8c;
-}
-
-.footer i {
   font-size: 2rem;
+  text-decoration: none;
 }
 
 /* Media Queries */
