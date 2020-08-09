@@ -1,13 +1,13 @@
 const commits = document.querySelector('.commits');
 let hasCommits = false;
 
-const getRandomColor = function () {
+function getRandomColor() {
   const colors = ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
   const randomIndex = Math.floor(Math.random() * colors.length);
   return colors[randomIndex];
-};
+}
 
-const fillCommits = function () {
+function fillCommits() {
   // if there are commits, remove them before appending new commits
   if (hasCommits) {
     removeCommits();
@@ -30,14 +30,14 @@ const fillCommits = function () {
   }
 
   hasCommits = true;
-};
+}
 
-const removeCommits = function () {
+function removeCommits() {
   for (let i = 0; i < 20; i++) {
     const commitsCol = document.querySelector('.commits-col');
     commits.removeChild(commitsCol);
   }
-};
+}
 
 document.addEventListener('load', fillCommits());
 document.addEventListener('load', setInterval(fillCommits, 1000));
