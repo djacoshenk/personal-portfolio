@@ -275,6 +275,16 @@ textarea {
   width: 50%;
 }
 
+/* Success Page */
+.success-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  height: 85%;
+}
+
 /* Footer Styles */
 
 .footer {
@@ -324,6 +334,10 @@ textarea {
     justify-content: space-evenly;
     align-items: center;
     min-height: 85%;
+  }
+
+  .success-container {
+    font-size: 2rem;
   }
 }
 
