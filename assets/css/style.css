@@ -269,14 +269,7 @@ textarea {
   width: 100%;
 }
 
-.button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.button button {
+.contact-form button {
   background-color: var(--text-color);
   border: 0;
   border-radius: 5px;

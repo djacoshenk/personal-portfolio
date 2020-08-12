@@ -8,13 +8,14 @@
       content="Hello, my name is Danny Jacoshenk. I'm a Front End Developer."
     />
     <title>Danny Jacoshenk | Front End Developer</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel = “icon” href = ”favicon.ico” type = “image/x-icon” /> <link rel =
+    “shortcut icon” href = “favicon.ico” type = “image/x-icon” />
     <script
       src="https://kit.fontawesome.com/f5613ce50a.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel = “icon” href = ”favicon.ico” type = “image/x-icon” /> <link rel =
-    “shortcut icon” href = “favicon.ico” type = “image/x-icon” />
+    <script defer src="./assets/js/contact.js"></script>
   </head>
   <body>
     <header class="header">
@@ -28,6 +29,7 @@
     <article class="contact-container">
       <form
         class="contact-form"
+        id="contact-form"
         name="Contact Form"
         method="POST"
         data-netlify="true"
@@ -53,9 +55,7 @@
           <textarea style="resize: none;" name="message" id="message" ></textarea>
           <div></div>
         </div>
-        <div class="button">
-          <button type="submit" name="submit" id="submit">Submit</button>
-        </div>
+        <button type="submit" name="submit" id="submit">Submit</button>
       </form>
     </article>
     <footer class="footer">
@@ -68,6 +68,5 @@
         ></a>
       </nav>
     </footer>
-    <script src="./assets/js/contact.js"></script>
   </body>
 </html>
