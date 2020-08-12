@@ -3,7 +3,7 @@ const email = document.getElementById('email');
 const subject = document.getElementById('subject');
 const message = document.getElementById('message');
 
-function formValidate(e) {
+function validateForm(e) {
   e.preventDefault();
 
   if (name.value === '' || name.value == null) {
@@ -28,4 +28,4 @@ function formValidate(e) {
   }
 }
 
-document.getElementById('submit').addEventListener('click', formValidate);
+document.getElementById('submit').addEventListener('click', validateForm());
