@@ -227,7 +227,7 @@ html {
 .contact-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   height: 85%;
 }
@@ -235,17 +235,24 @@ html {
 .contact-form {
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   background-color: var(--secondary-color);
   border-radius: 20px;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   height: 500px;
   width: 280px;
 }
 
 .contact-form div {
   width: 100%;
+}
+
+.contact-form div > div {
+  height: 2rem;
+  width: 100%;
+  font-size: 0.8rem;
+  color: #ff5555;
 }
 
 .contact-form input,
@@ -256,7 +263,7 @@ textarea {
   color: #f8f8f2;
   font-family: inherit;
   font-size: inherit;
-  margin: 0.5rem 0;
+  margin-top: 0.5rem;
   padding: 0.5rem;
   outline: none;
   width: 100%;
@@ -327,8 +334,12 @@ textarea {
   }
 
   .contact-form {
-    height: 600px;
+    height: 605px;
     width: 400px;
+  }
+
+  .contact-form div > div {
+    height: 3rem;
   }
 
   .contact-form textarea {
