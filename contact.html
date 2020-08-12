@@ -32,6 +32,7 @@
         method="POST"
         data-netlify="true"
         action="./success.html"
+        data-netlify-recaptcha="true"
         >
         <div class="name">
           <label for="name">Name</label></br>
@@ -41,9 +42,15 @@
           <label for="email">Email</label></br>
           <input type="email" name="email" id="email"/>
         </div>
+        <div class="subject">
+          <label for="subject">Subject</label></br>
+          <input type="text" name="subject" id="subject"/>
+        </div>
         <div class="message">
           <label for="message">Message</label></br>
           <textarea style="resize: none;" name="message" id="message"></textarea>
+        </div>
+        <div data-netlify-recaptcha="true">
         </div>
         <div class="button">
           <button type="submit">Submit</button>
