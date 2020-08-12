@@ -235,7 +235,7 @@ html {
 .contact-form {
   display: flex;
   flex-flow: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   background-color: var(--secondary-color);
   border-radius: 20px;
@@ -249,7 +249,7 @@ html {
 }
 
 .contact-form div > div {
-  height: 2rem;
+  height: 1.5rem;
   width: 100%;
   font-size: 0.8rem;
   color: #ff5555;
@@ -277,7 +277,6 @@ textarea {
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
-  margin: 0.5rem 0;
   padding: 0.5rem;
   outline: none;
   width: 50%;
@@ -329,10 +328,6 @@ textarea {
   .contact-form {
     height: 605px;
     width: 400px;
-  }
-
-  .contact-form div > div {
-    height: 3rem;
   }
 
   .contact-form textarea {
