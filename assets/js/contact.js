@@ -12,7 +12,7 @@ function validateForm(e) {
 
   if (name.value === '' || name.value == null) {
     errors++;
-    name.parentElement.lastElementChild.innerHTML = 'Please enter a name.';
+    name.nextElementSibling.innerHTML = 'Please enter a name.';
   }
 
   if (
@@ -21,20 +21,17 @@ function validateForm(e) {
     !email.value.match(emailFormat)
   ) {
     errors++;
-    email.parentElement.lastElementChild.innerHTML =
-      'Please enter a valid email.';
+    email.nextElementSibling.innerHTML = 'Please enter a valid email.';
   }
 
   if (subject.value === '' || subject.value == null) {
     errors++;
-    subject.parentElement.lastElementChild.innerHTML =
-      'Please enter a subject.';
+    subject.nextElementSibling.innerHTML = 'Please enter a subject.';
   }
 
   if (message.value === '' || message.value == null) {
     errors++;
-    message.parentElement.lastElementChild.innerHTML =
-      'Please enter a message.';
+    message.nextElementSibling.innerHTML = 'Please enter a message.';
   }
 
   if (errors > 0) {
@@ -43,40 +40,37 @@ function validateForm(e) {
 }
 
 function formListener(e) {
-  let target = e.currentTarget;
+  let target = e.target;
 
   if (target === name) {
     if (target.value === '' || name.value == null) {
-      name.parentElement.lastElementChild.innerHTML = 'Please enter a name.';
+      name.nextElementSibling.innerHTML = 'Please enter a name.';
     } else {
-      name.parentElement.lastElementChild.innerHTML = '';
+      name.nextElementSibling.innerHTML = '';
     }
   }
 
   if (target === email) {
     if (!email.value.match(emailFormat)) {
-      email.parentElement.lastElementChild.innerHTML =
-        'Please enter a valid email.';
+      email.nextElementSibling.innerHTML = 'Please enter a valid email.';
     } else {
-      email.parentElement.lastElementChild.innerHTML = '';
+      email.nextElementSibling.innerHTML = '';
     }
   }
 
   if (target === subject) {
     if (target.value === '' || name.value == null) {
-      subject.parentElement.lastElementChild.innerHTML =
-        'Please enter a subject.';
+      subject.nextElementSibling.innerHTML = 'Please enter a subject.';
     } else {
-      subject.parentElement.lastElementChild.innerHTML = '';
+      subject.nextElementSibling.innerHTML = '';
     }
   }
 
   if (target === message) {
     if (target.value === '' || name.value == null) {
-      message.parentElement.lastElementChild.innerHTML =
-        'Please enter a message.';
+      message.nextElementSibling.innerHTML = 'Please enter a message.';
     } else {
-      message.parentElement.lastElementChild.innerHTML = '';
+      message.nextElementSibling.innerHTML = '';
     }
   }
 }
