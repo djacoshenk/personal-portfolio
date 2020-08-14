@@ -7,6 +7,7 @@ const formInput = document.getElementsByTagName('input');
 const formTextArea = document.getElementsByTagName('textarea');
 const emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
+// Check to see that all fields have valid inputs
 function validateForm(e) {
   let errors = 0;
 
@@ -39,6 +40,7 @@ function validateForm(e) {
   }
 }
 
+// Listen for user actions - 'focus' and 'input'
 function formListener(e) {
   let target = e.target;
 
@@ -75,12 +77,15 @@ function formListener(e) {
   }
 }
 
+// Check if form is valid on submit
 form.addEventListener('submit', validateForm);
 
+// Add a 'focus' event listener to each input and textarea element
 [...formInput, ...formTextArea].forEach((input) =>
   input.addEventListener('focus', formListener)
 );
 
+// Add an 'input' event listener to each input and textarea element
 [...formInput, ...formTextArea].forEach((input) =>
   input.addEventListener('input', formListener)
 );
