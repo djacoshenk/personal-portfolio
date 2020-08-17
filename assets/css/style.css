@@ -313,7 +313,7 @@ textarea {
 /* For Tablets */
 @media (min-width: 481px) {
   .home-container {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .contact-form {
@@ -347,8 +347,8 @@ textarea {
 
 /* For Large Screens */
 @media (min-width: 1025px) {
-  .nav-bar {
-    width: 50%;
+  .home-container {
+    font-size: 2.6rem;
   }
 
   .blog-container {
