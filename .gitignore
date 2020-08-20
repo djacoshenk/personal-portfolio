@@ -1,5 +1,8 @@
 # dependencies
 /node_modules
 
-#misc
+# misc
 .DS_Store
+
+# scss
+/scss
