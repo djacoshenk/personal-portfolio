@@ -1,0 +1,110 @@
+/* Base Styles */
+$font-stack: 'Fira Code', monospace;
+$primary-color: #282a36;
+$secondary-color: #44475a;
+$dracula-pink: #ff79c6;
+$dracula-yellow: #f1fa8c;
+$dracula-green: #50fa7b;
+$dracula-white: #f8f8f2;
+$dracula-orange: #ffb86c;
+$dracula-cyan: #8be9fd;
+$dracula-red: #ff5555;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+html {
+  background-color: $primary-color;
+  color: $dracula-pink;
+  font-family: $font-stack;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Header Styles */
+@import 'header';
+
+/* Home Page Styles */
+@import 'home';
+
+/* Blog Page Styles */
+@import 'blog';
+
+/* Work Page Styles */
+@import 'work';
+
+/* Contact Page Styles */
+@import 'contact';
+
+/* Success Page Styles */
+@import 'success';
+
+/* Footer Styles */
+@import 'footer';
+
+/* Media Queries */
+
+/* For Tablets */
+@media (min-width: 481px) {
+  .home-container {
+    font-size: 1.4rem;
+  }
+
+  .contact-container {
+    .contact-form {
+      height: 605px;
+      width: 400px;
+
+      textarea {
+        height: 6rem;
+      }
+    }
+  }
+}
+
+/* For Laptops */
+@media (min-width: 769px) {
+  .home-container {
+    font-size: 2rem;
+  }
+
+  .work-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 85%;
+  }
+
+  .success-container {
+    font-size: 2rem;
+  }
+}
+
+/* For Large Screens */
+@media (min-width: 1025px) {
+  .home-container {
+    font-size: 2.6rem;
+  }
+
+  .blog-container {
+    grid-template-columns: repeat(3, 300px);
+  }
+
+  .work-container {
+    height: 85%;
+  }
+}
