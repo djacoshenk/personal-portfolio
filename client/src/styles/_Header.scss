@@ -1,0 +1,28 @@
+/* Header Stlyes */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 5%;
+
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: $primary-color;
+
+    a {
+      color: $dracula-yellow;
+      font-size: 1rem;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

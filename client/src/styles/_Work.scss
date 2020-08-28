@@ -1,0 +1,75 @@
+/* Work Page Styles */
+.work-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(height - 15%);
+  text-align: center;
+
+  .work-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $secondary-color;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem;
+    transition: all 0.3s;
+    text-decoration: none;
+    height: 575px;
+    width: 300px;
+
+    &:hover {
+      transform: translate(0, -2px);
+    }
+
+    h3 {
+      color: $dracula-pink;
+      font-size: 1.4rem;
+      padding: 1rem 0;
+    }
+
+    p {
+      color: $dracula-white;
+    }
+
+    a {
+      background-color: $dracula-pink;
+      border-radius: 5px;
+      color: $primary-color;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      width: 200px;
+
+      i {
+        color: $primary-color;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .work-project-tech {
+      i {
+        margin: 0 1rem;
+        font-size: 2rem;
+
+        &.fa-html5 {
+          color: $dracula-orange;
+        }
+
+        &.fa-css3-alt {
+          color: $dracula-cyan;
+        }
+
+        &.fa-js {
+          color: $dracula-yellow;
+        }
+
+        &.fa-react {
+          color: $dracula-cyan;
+        }
+      }
+    }
+  }
+}

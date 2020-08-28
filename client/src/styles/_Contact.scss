@@ -1,0 +1,58 @@
+/* Contact Page Styles */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+
+  .contact-form {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $secondary-color;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    height: 500px;
+    width: 280px;
+
+    div {
+      width: 100%;
+
+      div {
+        height: 1.5rem;
+        width: 100%;
+        font-size: 0.8rem;
+        color: $dracula-red;
+      }
+    }
+
+    input,
+    textarea {
+      background-color: $primary-color;
+      border: 0;
+      border-radius: 5px;
+      color: #f8f8f2;
+      font-family: inherit;
+      font-size: inherit;
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+      outline: none;
+      width: 100%;
+    }
+
+    button {
+      background-color: $dracula-pink;
+      border: 0;
+      border-radius: 5px;
+      color: $primary-color;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: inherit;
+      padding: 0.5rem;
+      outline: none;
+      width: 50%;
+    }
+  }
+}

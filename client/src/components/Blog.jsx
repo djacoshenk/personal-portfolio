@@ -1,81 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Hello, my name is Danny Jacoshenk. I'm a Front End Developer."
-    />
-    <title>Danny Jacoshenk | Front End Developer</title>
-    <link rel="stylesheet" href="./dist/css/style.css" />
-    <link rel = “icon” href = ”favicon.ico” type = “image/x-icon” /> <link rel =
-    “shortcut icon” href = “favicon.ico” type = “image/x-icon” />
-    <script
-      src="https://kit.fontawesome.com/f5613ce50a.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="nav-bar">
-        <a href="./index">Home</a>
-        <a href="./blog">Blog</a>
-        <a href="./work">Work</a>
-        <a href="./contact">Contact</a>
-      </nav>
-    </header>
-    <article class="blog-container">
-      <a class="blog-post" href="#">
+import React from 'react';
+
+function Blog() {
+  return (
+    <article class='blog-container'>
+      <a class='blog-post' href='#'>
         <h3>What is Hoisting?</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
           distinctio delectus accusamus ea, magnam velit!
         </p>
       </a>
-      <a class="blog-post" href="#">
+      <a class='blog-post' href='#'>
         <h3>Pass by Value vs. Reference</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
           distinctio delectus accusamus ea, magnam velit!
         </p>
       </a>
-      <a class="blog-post" href="#">
+      <a class='blog-post' href='#'>
         <h3>for...in & for...of</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
           distinctio delectus accusamus ea, magnam velit!
         </p>
       </a>
-      <a class="blog-post" href="#">
+      <a class='blog-post' href='#'>
         <h3>What is Coercion?</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
           distinctio delectus accusamus ea, magnam velit!
         </p>
       </a>
-      <a class="blog-post" href="#">
+      <a class='blog-post' href='#'>
         <h3>Null, Undefined, & Not Defined</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
           distinctio delectus accusamus ea, magnam velit!
         </p>
       </a>
-      <a class="blog-post" href="#">
+      <a class='blog-post' href='#'>
         <h3>Array(), Array.from(), & Array.of()</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
           distinctio delectus accusamus ea, magnam velit!
         </p>
       </a>
-      <a class="blog-post" href="#">
+      <a class='blog-post' href='#'>
         <h3>Function Declarations & Expressions</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
           distinctio delectus accusamus ea, magnam velit!
         </p>
       </a>
-      <a class="blog-post" href="#">
+      <a class='blog-post' href='#'>
         <h3>What are Identifiers?</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
@@ -83,15 +60,7 @@
         </p>
       </a>
     </article>
-    <footer class="footer">
-      <nav class="social-links">
-        <a href="https://github.com/djacoshenk" target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a href="https://linkedin.com/in/dannyjacoshenk" target="_blank"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-      </nav>
-    </footer>
-  </body>
-</html>
+  );
+}
+
+export default Blog;

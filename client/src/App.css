@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap");
 /* Base Styles */
 * {
   box-sizing: border-box;
@@ -17,6 +16,10 @@ html {
   color: #ff79c6;
   font-family: "Fira Code", monospace; }
 
+#root {
+  height: 100%; }
+
+/* Header Styles */
 /* Header Stlyes */
 .header {
   display: flex;
@@ -210,6 +213,7 @@ html {
   height: 85%; }
 
 /* Footer Styles */
+/* Footer Styles */
 .footer {
   display: flex;
   flex-direction: row;
@@ -228,7 +232,6 @@ html {
       text-decoration: none;
       margin: 0 2rem; }
 
-/* Media Queries */
 /* Media Queries */
 /* For Tablets */
 @media (min-width: 481px) {
