@@ -13,10 +13,10 @@ function Work() {
             deserunt illum aliquam. Incidunt repellendus, consectetur distinctio
             soluta cupiditate ratione praesentium!
           </p>
-          <a href='#' target='_blank' rel='noreferrer'>
+          <a href='#home'>
             <i className='fas fa-eye'></i>Live Version
           </a>
-          <a href='#' target='_blank' rel='noreferrer'>
+          <a href='#home'>
             <i className='fab fa-github'></i>View Code
           </a>
           <div className='work-project-tech'>
@@ -34,10 +34,10 @@ function Work() {
             deserunt illum aliquam. Incidunt repellendus, consectetur distinctio
             soluta cupiditate ratione praesentium!
           </p>
-          <a href='#' target='_blank' rel='noreferrer'>
+          <a href='#home'>
             <i className='fas fa-eye'></i>Live Version
           </a>
-          <a href='#' target='_blank' rel='noreferrer'>
+          <a href='#home'>
             <i className='fab fa-github'></i>View Code
           </a>
           <div className='work-project-tech'>
@@ -55,10 +55,10 @@ function Work() {
             deserunt illum aliquam. Incidunt repellendus, consectetur distinctio
             soluta cupiditate ratione praesentium!
           </p>
-          <a href='#' target='_blank' rel='noreferrer'>
+          <a href='#home'>
             <i className='fas fa-eye'></i>Live Version
           </a>
-          <a href='#' target='_blank' rel='noreferrer'>
+          <a href='#home'>
             <i className='fab fa-github'></i>View Code
           </a>
           <div className='work-project-tech'>
