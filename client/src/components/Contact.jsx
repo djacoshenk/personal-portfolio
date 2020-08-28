@@ -28,7 +28,25 @@ function Contact() {
   const emailFormat = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 
   function handleFormValidation(e) {
-    e.preventDefault();
+    // track form errors
+    let errors = 0;
+
+    // check if any of the form values are empty, if so show the error
+    for (const [name, value] of Object.entries(formValues)) {
+      if (value === '') {
+        errors++;
+        e.preventDefault();
+
+        setErrorValues((prevState) => ({
+          ...prevState,
+          [name]: changeErrorValues[name],
+        }));
+      }
+    }
+
+    if (errors === 0) {
+      setFormValues(defaultFormValues);
+    }
   }
 
   function handleEmailValidation(e) {
@@ -40,9 +58,15 @@ function Contact() {
     });
 
     if (!emailFormat.test(value)) {
-      setErrorValues({ ...errorValues, [name]: changeErrorValues.email });
+      setErrorValues((prevState) => ({
+        ...prevState,
+        [name]: changeErrorValues[name],
+      }));
     } else {
-      setErrorValues({ ...errorValues, [name]: defaultErrorValues.email });
+      setErrorValues((prevState) => ({
+        ...prevState,
+        [name]: defaultErrorValues[name],
+      }));
     }
   }
 
@@ -53,6 +77,18 @@ function Contact() {
       ...formValues,
       [name]: value,
     });
+
+    if (value === '') {
+      setErrorValues((prevState) => ({
+        ...prevState,
+        [name]: changeErrorValues[name],
+      }));
+    } else {
+      setErrorValues((prevState) => ({
+        ...prevState,
+        [name]: defaultErrorValues[name],
+      }));
+    }
   }
 
   return (

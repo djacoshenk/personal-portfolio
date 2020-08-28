@@ -1,4 +1,5 @@
 import React from 'react';
+import shortid from 'shortid';
 
 function Commits() {
   function getRandomColor() {
@@ -16,11 +17,12 @@ function Commits() {
     const commitsBox = [];
 
     // create 7 commit boxes and assign random color
-    for (let i = 0; i < 7; i++) {
+    for (let j = 0; j < 7; j++) {
       commitsBox.push(
         React.createElement('div', {
           className: 'commits-box',
           style: { backgroundColor: getRandomColor() },
+          key: shortid.generate(),
         })
       );
     }
@@ -28,7 +30,7 @@ function Commits() {
     // append the commits boxes to a commits column
     const commitsCol = React.createElement(
       'div',
-      { className: 'commits-col' },
+      { className: 'commits-col', key: shortid.generate() },
       [commitsBox]
     );
 
