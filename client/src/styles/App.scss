@@ -81,6 +81,10 @@ html {
       grid-template-columns: repeat(2, 300px);
     }
   }
+
+  .blog-container {
+    height: 100vh;
+  }
 }
 
 /* For Large Screens */

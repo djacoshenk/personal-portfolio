@@ -37,7 +37,7 @@ html {
     width: 100%; }
     .header .nav-bar a {
       color: #f1fa8c;
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: 600;
       text-decoration: none;
       margin: 0 1rem; }
@@ -83,7 +83,7 @@ html {
 .blog-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 100%; }
   .blog-container .blog-container-title {
@@ -127,7 +127,7 @@ html {
 .work-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: auto; }
   .work-container .work-container-title {
@@ -194,16 +194,15 @@ html {
 .contact-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 85vh;
   padding: 0rem; }
   .contact-container .contact-container-title {
     font-size: 2rem;
     color: #f1fa8c;
     text-decoration: underline;
-    margin-bottom: 1rem;
-    margin-top: 6vh; }
+    margin-bottom: 1rem; }
   .contact-container .contact-form {
     display: flex;
     flex-flow: column;
@@ -296,7 +295,9 @@ html {
   .home-container {
     font-size: 2.8rem; }
   .work-container .work-project-container {
-    grid-template-columns: repeat(2, 300px); } }
+    grid-template-columns: repeat(2, 300px); }
+  .blog-container {
+    height: 100vh; } }
 
 /* For Large Screens */
 @media (min-width: 1025px) {
