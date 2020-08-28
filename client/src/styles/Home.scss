@@ -4,28 +4,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 85%;
-  font-size: 1rem;
+  height: 100vh;
   text-align: center;
+  font-size: 1rem;
+
+  p {
+    margin-bottom: 1rem;
+  }
 
   span {
     color: $dracula-green;
   }
 
   .commits {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-    height: 112px;
-    width: 333px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 10px);
+    justify-content: center;
+    grid-gap: 8px;
+    text-align: center;
+    width: 100%;
+    height: auto;
 
     .commits-col {
-      display: flex;
-      flex-flow: column;
-      justify-content: space-between;
-      align-items: center;
+      display: grid;
+      justify-content: center;
+      grid-gap: 8px;
       height: 100%;
       width: 10px;
 

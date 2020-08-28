@@ -13,13 +13,13 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run sass && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier \"src/**/*.{js,jsx,html,css}\" --write",
-    "lint": "eslint \"src/**/*.{js,jsx,html,css}\" --quiet",
-    "sass": "node-sass ./src/styles/App.scss -o ./src/"
+    "format": "prettier \"./src/**/*.{js,jsx,html,css}\" --write",
+    "lint": "eslint \"./src/**/*.{js,jsx,html,css}\" --quiet",
+    "sass": "node-sass ./src/styles/App.scss -o ./src/ --quiet"
   },
   "browserslist": {
     "production": [
