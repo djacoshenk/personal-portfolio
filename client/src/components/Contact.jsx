@@ -73,10 +73,10 @@ function Contact() {
   function handleFormValues(e) {
     const { name, value } = e.target;
 
-    setFormValues({
-      ...formValues,
+    setFormValues((prevState) => ({
+      ...prevState,
       [name]: value,
-    });
+    }));
 
     if (value === '') {
       setErrorValues((prevState) => ({
@@ -100,7 +100,7 @@ function Contact() {
         name='Contact Form'
         method='POST'
         data-netlify='true'
-        action='./success.html'
+        action=''
         onSubmit={handleFormValidation}
       >
         <div className='name'>
