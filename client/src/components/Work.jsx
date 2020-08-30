@@ -8,10 +8,11 @@ function Work() {
         <section className='work-project'>
           <h3>Project 1</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
-            mollitia enim id explicabo facere nulla, autem qui impedit ad
-            deserunt illum aliquam. Incidunt repellendus, consectetur distinctio
-            soluta cupiditate ratione praesentium!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            dignissimos debitis, dolorum illo iure consectetur repellat eos
+            provident pariatur molestias excepturi velit sed! Nemo nihil
+            praesentium, illum quidem dolores accusamus sapiente, officia dolore
+            laborum accusantium explicabo quas tempore, vel alias.
           </p>
           <a href='#home'>
             <i className='fas fa-eye'></i>Live Version
@@ -29,10 +30,11 @@ function Work() {
         <section className='work-project'>
           <h3>Project 2</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
-            mollitia enim id explicabo facere nulla, autem qui impedit ad
-            deserunt illum aliquam. Incidunt repellendus, consectetur distinctio
-            soluta cupiditate ratione praesentium!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            dignissimos debitis, dolorum illo iure consectetur repellat eos
+            provident pariatur molestias excepturi velit sed! Nemo nihil
+            praesentium, illum quidem dolores accusamus sapiente, officia dolore
+            laborum accusantium explicabo quas tempore, vel alias.
           </p>
           <a href='#home'>
             <i className='fas fa-eye'></i>Live Version
@@ -50,10 +52,11 @@ function Work() {
         <section className='work-project'>
           <h3>Project 3</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
-            mollitia enim id explicabo facere nulla, autem qui impedit ad
-            deserunt illum aliquam. Incidunt repellendus, consectetur distinctio
-            soluta cupiditate ratione praesentium!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            dignissimos debitis, dolorum illo iure consectetur repellat eos
+            provident pariatur molestias excepturi velit sed! Nemo nihil
+            praesentium, illum quidem dolores accusamus sapiente, officia dolore
+            laborum accusantium explicabo quas tempore, vel alias.
           </p>
           <a href='#home'>
             <i className='fas fa-eye'></i>Live Version

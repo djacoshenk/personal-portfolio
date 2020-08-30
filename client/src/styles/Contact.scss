@@ -2,16 +2,17 @@
 .contact-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 85vh;
+  height: 90vh;
   padding: 0rem;
 
   .contact-container-title {
     font-size: 2rem;
     color: $dracula-yellow;
     text-decoration: underline;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 6vh;
   }
 
   .contact-form {
