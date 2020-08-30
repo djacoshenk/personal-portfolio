@@ -100,7 +100,7 @@ function Contact() {
         name='Contact Form'
         method='POST'
         data-netlify='true'
-        action='/index.html/#contact'
+        action='/#contact'
         onSubmit={handleFormValidation}
       >
         <div className='name'>
