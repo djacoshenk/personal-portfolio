@@ -32,8 +32,8 @@ function Contact() {
     let errors = 0;
 
     // check if any of the form values are empty, if so show the error
-    for (const [name, value] of Object.entries(formValues)) {
-      if (value === '') {
+    for (const name in formValues) {
+      if (formValues[name] === '') {
         errors++;
         e.preventDefault();
 
@@ -45,7 +45,7 @@ function Contact() {
     }
 
     if (errors === 0) {
-      setFormValues(defaultFormValues);
+      setFormValues((prevState) => ({ ...prevState, ...defaultFormValues }));
     }
   }
 
