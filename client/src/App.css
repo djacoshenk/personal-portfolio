@@ -83,14 +83,14 @@ html {
 .blog-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%; }
   .blog-container .blog-container-title {
     font-size: 2rem;
     color: #f1fa8c;
     text-decoration: underline;
-    margin-bottom: 1rem;
+    margin-bottom: 6vh;
     margin-top: 6vh; }
   .blog-container .blog-post-container {
     display: grid;
@@ -127,14 +127,14 @@ html {
 .work-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: auto; }
   .work-container .work-container-title {
     font-size: 2rem;
     color: #f1fa8c;
     text-decoration: underline;
-    margin-bottom: 1rem;
+    margin-bottom: 6vh;
     margin-top: 6vh; }
   .work-container .work-project-container {
     display: grid;
@@ -153,15 +153,14 @@ html {
       text-align: center;
       transition: all 0.3s;
       text-decoration: none;
-      height: 605px;
+      height: 632px;
       width: 300px;
       box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
       .work-container .work-project-container .work-project:hover {
         transform: translate(0, -2px); }
       .work-container .work-project-container .work-project h3 {
         color: #ff79c6;
-        font-size: 1.4rem;
-        padding: 1rem 0; }
+        font-size: 1.4rem; }
       .work-container .work-project-container .work-project p {
         color: #f8f8f2;
         line-height: 28px; }
@@ -194,15 +193,16 @@ html {
 .contact-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 85vh;
+  height: 90vh;
   padding: 0rem; }
   .contact-container .contact-container-title {
     font-size: 2rem;
     color: #f1fa8c;
     text-decoration: underline;
-    margin-bottom: 1rem; }
+    margin-bottom: 2rem;
+    margin-top: 6vh; }
   .contact-container .contact-form {
     display: flex;
     flex-flow: column;
