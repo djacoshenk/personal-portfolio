@@ -45,6 +45,7 @@ function Contact() {
     }
 
     if (errors === 0) {
+      e.preventDefault();
       setFormValues((prevState) => ({ ...prevState, ...defaultFormValues }));
     }
   }
@@ -100,7 +101,7 @@ function Contact() {
         name='Contact Form'
         method='POST'
         data-netlify='true'
-        action='./#contact'
+        action=''
         onSubmit={handleFormValidation}
       >
         <div className='name'>
