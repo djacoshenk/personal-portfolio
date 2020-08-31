@@ -1,52 +1,54 @@
 import React from 'react';
+import shortid from 'shortid';
+import BlogPost from './BlogPost';
 
 function Blog() {
+  const blogPosts = [
+    {
+      title: 'What is Hoisting?',
+      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+      distinctio delectus accusamus ea, magnam velit!`,
+    },
+    {
+      title: 'Pass by Value vs. Reference',
+      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+      distinctio delectus accusamus ea, magnam velit!`,
+    },
+    {
+      title: 'Iterating Over Objects',
+      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+      distinctio delectus accusamus ea, magnam velit!`,
+    },
+    {
+      title: 'Null, Undefined, & Not Defined',
+      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+      distinctio delectus accusamus ea, magnam velit!`,
+    },
+    {
+      title: 'What is Coercion?',
+      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+      distinctio delectus accusamus ea, magnam velit!`,
+    },
+    {
+      title: 'Function Declarations & Expressions',
+      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+      distinctio delectus accusamus ea, magnam velit!`,
+    },
+  ];
+
   return (
     <article className='blog-container' id='blog'>
       <h2 className='blog-container-title'>Blog</h2>
       <section className='blog-post-container'>
-        <a className='blog-post' href='#home'>
-          <h3>What is Hoisting?</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-            distinctio delectus accusamus ea, magnam velit!
-          </p>
-        </a>
-        <a className='blog-post' href='#home'>
-          <h3>Pass by Value vs. Reference</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-            distinctio delectus accusamus ea, magnam velit!
-          </p>
-        </a>
-        <a className='blog-post' href='#home'>
-          <h3>for...in & for...of</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-            distinctio delectus accusamus ea, magnam velit!
-          </p>
-        </a>
-        <a className='blog-post' href='#home'>
-          <h3>What is Coercion?</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-            distinctio delectus accusamus ea, magnam velit!
-          </p>
-        </a>
-        <a className='blog-post' href='#home'>
-          <h3>Null, Undefined, & Not Defined</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-            distinctio delectus accusamus ea, magnam velit!
-          </p>
-        </a>
-        <a className='blog-post' href='#home'>
-          <h3>Function Declarations & Expressions</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-            distinctio delectus accusamus ea, magnam velit!
-          </p>
-        </a>
+        {blogPosts.map((post) => {
+          return (
+            <BlogPost
+              key={shortid.generate()}
+              title={post.title}
+              desc={post.desc}
+            />
+          );
+        })}
       </section>
     </article>
   );

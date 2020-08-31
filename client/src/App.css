@@ -83,15 +83,14 @@ html {
 .blog-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 100%; }
   .blog-container .blog-container-title {
     font-size: 2rem;
     color: #f1fa8c;
     text-decoration: underline;
-    margin-bottom: 7vh;
-    margin-top: 7vh; }
+    margin-bottom: 2rem; }
   .blog-container .blog-post-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
@@ -127,15 +126,14 @@ html {
 .work-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: auto; }
   .work-container .work-container-title {
     font-size: 2rem;
     color: #f1fa8c;
     text-decoration: underline;
-    margin-bottom: 7vh;
-    margin-top: 7vh; }
+    margin-bottom: 2rem; }
   .work-container .work-project-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
@@ -193,16 +191,15 @@ html {
 .contact-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 84vh;
   padding: 0rem; }
   .contact-container .contact-container-title {
     font-size: 2rem;
     color: #f1fa8c;
     text-decoration: underline;
-    margin-bottom: 2rem;
-    margin-top: 7vh; }
+    margin-bottom: 2rem; }
   .contact-container .contact-form {
     display: flex;
     flex-flow: column;
