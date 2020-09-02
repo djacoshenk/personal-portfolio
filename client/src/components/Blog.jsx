@@ -1,9 +1,9 @@
 import React from 'react';
 import shortid from 'shortid';
-import BlogPost from './BlogPost';
+import BlogCard from './BlogCard';
 
 function Blog() {
-  const blogPosts = [
+  const blogCards = [
     {
       title: 'What is Hoisting?',
       desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
@@ -39,13 +39,13 @@ function Blog() {
   return (
     <article className='blog-container' id='blog'>
       <h2 className='blog-container-title'>Blog</h2>
-      <section className='blog-post-container'>
-        {blogPosts.map((post) => {
+      <section className='blog-card-container'>
+        {blogCards.map((card) => {
           return (
-            <BlogPost
+            <BlogCard
               key={shortid.generate()}
-              title={post.title}
-              desc={post.desc}
+              title={card.title}
+              desc={card.desc}
             />
           );
         })}

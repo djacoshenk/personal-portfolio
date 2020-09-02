@@ -1,9 +1,9 @@
 import React from 'react';
 import shortid from 'shortid';
-import WorkProject from './WorkProject';
+import ProjectCard from './ProjectCard';
 
 function Work() {
-  const workProject = [
+  const projects = [
     {
       title: 'Project 1',
       desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
@@ -37,9 +37,9 @@ function Work() {
     <article className='work-container' id='work'>
       <h2 className='work-container-title'>Work</h2>
       <section className='work-project-container'>
-        {workProject.map((proj) => {
+        {projects.map((proj) => {
           return (
-            <WorkProject
+            <ProjectCard
               key={shortid.generate()}
               title={proj.title}
               desc={proj.desc}

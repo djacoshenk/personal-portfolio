@@ -1,6 +1,6 @@
 import React from 'react';
 
-function WorkProject({ title, desc, tech }) {
+function ProjectCard({ title, desc, tech }) {
   return (
     <section className='work-project'>
       <h3>{title}</h3>
@@ -20,4 +20,4 @@ function WorkProject({ title, desc, tech }) {
   );
 }
 
-export default WorkProject;
+export default ProjectCard;
