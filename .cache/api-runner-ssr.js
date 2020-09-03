@@ -1,11 +1,11 @@
 var plugins = [{
-      plugin: require('/Users/djacoshenk/Desktop/Projects/personal-portfolio/client/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/djacoshenk/Desktop/Projects/personal-portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/djacoshenk/Desktop/Projects/personal-portfolio/client/node_modules/gatsby-plugin-fontawesome-css/gatsby-ssr'),
+      plugin: require('/Users/djacoshenk/Desktop/Projects/personal-portfolio/node_modules/gatsby-plugin-fontawesome-css/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/djacoshenk/Desktop/Projects/personal-portfolio/client/node_modules/gatsby-plugin-prefetch-google-fonts/gatsby-ssr'),
+      plugin: require('/Users/djacoshenk/Desktop/Projects/personal-portfolio/node_modules/gatsby-plugin-prefetch-google-fonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":[{"family":"Roboto","variants":["100"]}]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
