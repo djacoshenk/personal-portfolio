@@ -1,6 +1,12 @@
 import React from 'react';
 import shortid from 'shortid';
 import ProjectCard from './ProjectCard';
+import {
+  faHtml5,
+  faCss3Alt,
+  faJs,
+  faReact,
+} from '@fortawesome/free-brands-svg-icons';
 
 function Work() {
   const projects = [
@@ -11,7 +17,7 @@ function Work() {
       provident pariatur molestias excepturi velit sed! Nemo nihil
       praesentium, illum quidem dolores accusamus sapiente, officia dolore
       laborum accusantium explicabo quas tempore, vel alias.`,
-      tech: ['html5', 'css3-alt', 'js', 'react'],
+      tech: [faHtml5, faCss3Alt, faJs, faReact],
     },
     {
       title: 'Project 2',
@@ -20,7 +26,7 @@ function Work() {
       provident pariatur molestias excepturi velit sed! Nemo nihil
       praesentium, illum quidem dolores accusamus sapiente, officia dolore
       laborum accusantium explicabo quas tempore, vel alias.`,
-      tech: ['html5', 'css3-alt', 'js', 'react'],
+      tech: [faHtml5, faCss3Alt, faJs, faReact],
     },
     {
       title: 'Project 3',
@@ -29,7 +35,7 @@ function Work() {
       provident pariatur molestias excepturi velit sed! Nemo nihil
       praesentium, illum quidem dolores accusamus sapiente, officia dolore
       laborum accusantium explicabo quas tempore, vel alias.`,
-      tech: ['html5', 'css3-alt', 'js', 'react'],
+      tech: [faHtml5, faCss3Alt, faJs, faReact],
     },
   ];
 

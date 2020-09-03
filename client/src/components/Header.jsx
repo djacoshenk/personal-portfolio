@@ -1,13 +1,14 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
 function Header() {
   return (
     <header className='header'>
       <nav className='nav-bar'>
-        <a href='#home'>Home</a>
-        <a href='#work'>Work</a>
-        <a href='#blog'>Blog</a>
-        <a href='#contact'>Contact</a>
+        <Link to='/#home'>Home</Link>
+        <Link to='/#work'>Work</Link>
+        <Link to='/#blog'>Blog</Link>
+        <Link to='/#contact'>Contact</Link>
       </nav>
     </header>
   );

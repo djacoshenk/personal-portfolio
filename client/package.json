@@ -3,23 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "@types/react": "^16.9.47",
+    "gatsby": "^2.24.53",
+    "gatsby-link": "^2.4.13",
+    "gatsby-plugin-fontawesome-css": "^1.0.0",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-sass": "^2.3.12",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "npm run sass && react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
     "format": "prettier \"./src/**/*.{js,jsx,html,css}\" --write",
-    "lint": "eslint \"./src/**/*.{js,jsx,html,css}\" --quiet",
-    "sass": "node-sass ./src/styles/App.scss -o ./src/ --quiet"
+    "lint": "eslint \"./src/**/*.{js,jsx,html,css}\" --quiet"
   },
   "browserslist": {
     "production": [
