@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ContactForm({
+export default function ContactForm({
   formValues,
   errorValues,
   handleFormValues,
@@ -15,6 +15,7 @@ function ContactForm({
       method='POST'
       data-netlify='true'
       onSubmit={handleFormValidation}
+      action='/success'
     >
       <div className='name'>
         <label htmlFor='name'>Name</label>
@@ -66,5 +67,3 @@ function ContactForm({
     </form>
   );
 }
-
-export default ContactForm;

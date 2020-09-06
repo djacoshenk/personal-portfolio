@@ -1,57 +1,40 @@
 import React from 'react';
-import shortid from 'shortid';
 import BlogCard from './BlogCard';
+import { StaticQuery, graphql } from 'gatsby';
 
-function Blog() {
-  const blogCards = [
-    {
-      title: 'What is Hoisting?',
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-      distinctio delectus accusamus ea, magnam velit!`,
-    },
-    {
-      title: 'Pass by Value vs. Reference',
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-      distinctio delectus accusamus ea, magnam velit!`,
-    },
-    {
-      title: 'Iterating Over Objects',
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-      distinctio delectus accusamus ea, magnam velit!`,
-    },
-    {
-      title: 'Null, Undefined, & Not Defined',
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-      distinctio delectus accusamus ea, magnam velit!`,
-    },
-    {
-      title: 'What is Coercion?',
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-      distinctio delectus accusamus ea, magnam velit!`,
-    },
-    {
-      title: 'Function Declarations & Expressions',
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-      distinctio delectus accusamus ea, magnam velit!`,
-    },
-  ];
-
+export default function Blog() {
   return (
     <article className='blog-container' id='blog'>
-      <h2 className='blog-container-title'>Blog</h2>
-      <section className='blog-card-container'>
-        {blogCards.map((card) => {
-          return (
-            <BlogCard
-              key={shortid.generate()}
-              title={card.title}
-              desc={card.desc}
-            />
-          );
-        })}
-      </section>
+      <StaticQuery
+        query={graphql`
+          query BlogCardQuery {
+            allMarkdownRemark {
+              edges {
+                node {
+                  frontmatter {
+                    path
+                    title
+                    desc
+                  }
+                  html
+                }
+              }
+            }
+          }
+        `}
+        render={(data) => {
+          return data.allMarkdownRemark.edges.map((post) => {
+            return (
+              <BlogCard
+                key={post.node.id}
+                title={post.node.frontmatter.title}
+                desc={post.node.frontmatter.desc}
+                path={post.node.frontmatter.path}
+              />
+            );
+          });
+        }}
+      />
     </article>
   );
 }
-
-export default Blog;

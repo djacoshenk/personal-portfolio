@@ -1,14 +1,12 @@
 import React from 'react';
 
-import Home from '../components/Home';
+import Success from '../components/Success';
 import Layout from '../layouts/Layout';
 
-function index() {
+export default function success() {
   return (
     <Layout>
-      <Home />
+      <Success />
     </Layout>
   );
 }
-
-export default index;

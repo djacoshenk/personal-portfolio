@@ -1,23 +1,26 @@
 import React from 'react';
+import Link from 'gatsby-link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
     <footer className='footer'>
       <nav className='social-links'>
-        <a
-          href='https://github.com/djacoshenk'
+        <Link
+          to='https://github.com/djacoshenk'
           target='_blank'
           rel='noopener noreferrer'
         >
-          <i className='fab fa-github'></i>
-        </a>
-        <a
-          href='https://linkedin.com/in/dannyjacoshenk'
+          <FontAwesomeIcon icon={faGithub} />
+        </Link>
+        <Link
+          to='https://linkedin.com/in/dannyjacoshenk'
           target='_blank'
           rel='noopener noreferrer'
         >
-          <i className='fab fa-linkedin-in'></i>
-        </a>
+          <FontAwesomeIcon icon={faLinkedin} />
+        </Link>
       </nav>
     </footer>
   );

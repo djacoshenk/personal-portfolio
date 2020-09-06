@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import shortid from 'shortid';
 
 function ProjectCard({ title, desc, tech }) {
   return (
@@ -18,7 +19,7 @@ function ProjectCard({ title, desc, tech }) {
       </a>
       <div className='work-project-tech'>
         {tech.map((tech) => {
-          return <FontAwesomeIcon icon={tech} />;
+          return <FontAwesomeIcon icon={tech} key={shortid.generate()} />;
         })}
       </div>
     </section>

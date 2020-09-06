@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Commits from './Commits';
 
-function Home() {
+export default function Home() {
   const [time, setTime] = useState(Date.now());
 
   // triggers a re-render every second and display randomized commits
@@ -23,5 +23,3 @@ function Home() {
     </article>
   );
 }
-
-export default Home;

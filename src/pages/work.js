@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Home from '../components/Home';
+import Work from '../components/Work';
 import Layout from '../layouts/Layout';
 
-function index() {
+function work() {
   return (
     <Layout>
-      <Home />
+      <Work />
     </Layout>
   );
 }
 
-export default index;
+export default work;

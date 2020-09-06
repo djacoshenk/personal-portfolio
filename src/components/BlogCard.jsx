@@ -1,12 +1,11 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
-function BlogCard({ title, desc }) {
+export default function BlogCard({ key, title, desc, path }) {
   return (
-    <a className='blog-card' href='#home'>
+    <Link to={path} className='blog-card' key={key}>
       <h3>{title}</h3>
       <p>{desc}</p>
-    </a>
+    </Link>
   );
 }
-
-export default BlogCard;

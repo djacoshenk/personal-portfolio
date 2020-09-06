@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Home from '../components/Home';
+import Blog from '../components/Blog';
 import Layout from '../layouts/Layout';
 
-function index() {
+function blog() {
   return (
     <Layout>
-      <Home />
+      <Blog />
     </Layout>
   );
 }
 
-export default index;
+export default blog;

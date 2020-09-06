@@ -95,7 +95,6 @@ function Contact() {
 
   return (
     <article className='contact-container' id='contact'>
-      <h2 className='contact-container-title'>Contact</h2>
       <ContactForm
         formValues={formValues}
         errorValues={errorValues}

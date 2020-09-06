@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Home from '../components/Home';
+import Contact from '../components/Contact';
 import Layout from '../layouts/Layout';
 
-function index() {
+function contact() {
   return (
     <Layout>
-      <Home />
+      <Contact />
     </Layout>
   );
 }
 
-export default index;
+export default contact;
