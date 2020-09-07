@@ -31,7 +31,8 @@
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "format": "prettier \"./src/**/*.{js,jsx,html,css}\" --write",
-    "lint": "eslint \"./src/**/*.{js,jsx,html,css}\" --quiet"
+    "lint": "eslint \"./src/**/*.{js,jsx,html,css}\" --quiet",
+    "sass": "node-sass ./src/styles/styles.scss -o ./src/styles/ --quiet"
   },
   "browserslist": {
     "production": [
