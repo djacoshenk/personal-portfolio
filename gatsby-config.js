@@ -3,9 +3,12 @@ module.exports = {
     title: 'Personal Portfolio',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-fontawesome-css`,
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        includePaths: ['src/styles'],
+      },
+    },
     {
       resolve: 'gatsby-plugin-prefetch-google-fonts',
       options: {
@@ -26,5 +29,7 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-catch-links`,
+    'gatsby-plugin-react-helmet',
+    `gatsby-plugin-fontawesome-css`,
   ],
 };
