@@ -5,7 +5,7 @@ module.exports = {
     keywords: 'blog, frontend developer, javascript, react, gatsby, jamstack',
     url: 'https://dannyjaco.me',
     author: 'Danny Jacoshenk',
-    image: 'code.png',
+    icon: './public/static/code.png',
   },
   plugins: [
     {

@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 export default function SEO() {
   const { site } = useStaticQuery(siteQuery);
   const {
-    siteMetadata: { author, description, keywords, title, url, image },
+    siteMetadata: { author, description, keywords, title, url, icon },
   } = site;
 
   const seo = {
@@ -14,7 +14,7 @@ export default function SEO() {
     keywords,
     title,
     url,
-    image,
+    icon,
   };
 
   return (
@@ -23,12 +23,11 @@ export default function SEO() {
       <meta name='description' content={seo.description} />
       <meta name='keywords' content={seo.keywords} />
       <meta name='url' content={seo.url} />
-      <meta name='image' content={seo.image} />
+      <link rel='icon' href={seo.icon} />
       <link
         href='https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap'
         rel='stylesheet'
       />
-      <link rel='icon' href={seo.image} />
     </Helmet>
   );
 }
@@ -42,7 +41,7 @@ const siteQuery = graphql`
         keywords
         title
         url
-        image
+        icon
       }
     }
   }
