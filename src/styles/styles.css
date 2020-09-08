@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
 /* Base Styles */
 * {
   box-sizing: border-box;
@@ -13,7 +13,7 @@ body {
 html {
   background-color: #282a36;
   color: #ff79c6;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   scroll-behavior: smooth; }
 
 /* Header Styles */
@@ -40,7 +40,7 @@ html {
       margin: 0 1rem; }
       .header .nav-bar a:hover {
         text-decoration: underline;
-        color: #8be9fd; }
+        color: #50fa7b; }
 
 /* Home Page Styles */
 /* Home Page Styles */
@@ -118,7 +118,21 @@ html {
   align-items: center;
   height: 84vh; }
   .blog-post-container h1 {
+    color: #50fa7b;
     margin-top: 2rem; }
+  .blog-post-container .blog-post-content {
+    color: #f8f8f2;
+    width: 50%;
+    margin-top: 1rem; }
+    .blog-post-container .blog-post-content p {
+      margin: 1rem 0; }
+    .blog-post-container .blog-post-content .gatsby-highlight {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+      .blog-post-container .blog-post-content .gatsby-highlight pre {
+        background-color: #44475a;
+        border-radius: 10px; }
+      .blog-post-container .blog-post-content .gatsby-highlight code {
+        background-color: #44475a; }
 
 /* Work Page Styles */
 /* Work Page Styles */
@@ -261,7 +275,7 @@ html {
       text-decoration: none;
       margin: 0 2rem; }
       .footer .social-links a:hover {
-        color: #8be9fd; }
+        color: #50fa7b; }
 
 /* Media Queries */
 /* For Tablets */

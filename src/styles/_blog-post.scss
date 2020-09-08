@@ -6,6 +6,31 @@
   height: 84vh;
 
   h1 {
+    color: $dracula-green;
     margin-top: 2rem;
+  }
+
+  .blog-post-content {
+    color: $dracula-white;
+    width: 50%;
+    margin-top: 1rem;
+
+    p {
+      margin: 1rem 0;
+    }
+
+    .gatsby-highlight {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+      pre {
+        background-color: $secondary-color;
+        border-radius: 10px;
+      }
+
+      code {
+        background-color: $secondary-color;
+      }
+    }
   }
 }

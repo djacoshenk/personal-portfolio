@@ -10,12 +10,16 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
           {
-            family: 'Roboto',
-            variants: ['100'],
+            family: `Roboto Mono`,
+            variants: [`100`],
+          },
+          {
+            family: `Roboto`,
+            subsets: [`latin`],
           },
         ],
       },
@@ -27,7 +31,13 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: ['gatsby-remark-prismjs'],
+      },
+    },
+    'gatsby-prismjs-dracula',
     `gatsby-plugin-catch-links`,
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-fontawesome-css`,
