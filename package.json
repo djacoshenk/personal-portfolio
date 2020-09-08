@@ -32,7 +32,7 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "npm run sass && gatsby develop",
     "serve": "gatsby serve",
     "format": "prettier \"./src/**/*.{js,jsx,html,css}\" --write",
     "lint": "eslint \"./src/**/*.{js,jsx,html,css}\" --quiet",

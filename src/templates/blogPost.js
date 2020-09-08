@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { graphql } from 'gatsby';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 export default function blogTemplate({ data }) {
   const { markdownRemark } = data;
@@ -17,7 +16,6 @@ export default function blogTemplate({ data }) {
           dangerouslySetInnerHTML={{ __html: html }}
         ></div>
       </div>
-      <Footer />
     </Fragment>
   );
 }
