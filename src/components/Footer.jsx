@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className='footer'>
       <nav className='social-links'>
@@ -25,5 +25,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

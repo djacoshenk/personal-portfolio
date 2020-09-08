@@ -4,7 +4,7 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import shortid from 'shortid';
 
-function ProjectCard({ title, desc, tech }) {
+export default function ProjectCard({ title, desc, tech }) {
   return (
     <section className='work-project'>
       <h3>{title}</h3>
@@ -25,5 +25,3 @@ function ProjectCard({ title, desc, tech }) {
     </section>
   );
 }
-
-export default ProjectCard;

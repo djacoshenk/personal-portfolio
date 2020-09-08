@@ -1,6 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Personal Portfolio',
+    title: 'Danny Jacoshenk | Frontend Developer',
+    description: 'Read my blog, view my work, and contact me',
+    keywords: 'blog, frontend developer, javascript, react, gatsby, jamstack',
+    url: 'https://dannyjaco.me',
+    author: 'Danny Jacoshenk',
+    image: 'code.png',
   },
   plugins: [
     {

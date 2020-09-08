@@ -6,22 +6,7 @@ export default function Blog() {
   return (
     <article className='blog-container' id='blog'>
       <StaticQuery
-        query={graphql`
-          query BlogCardQuery {
-            allMarkdownRemark {
-              edges {
-                node {
-                  frontmatter {
-                    path
-                    title
-                    desc
-                  }
-                  html
-                }
-              }
-            }
-          }
-        `}
+        query={blogCardQuery}
         render={(data) => {
           return data.allMarkdownRemark.edges.map((post) => {
             return (
@@ -38,3 +23,20 @@ export default function Blog() {
     </article>
   );
 }
+
+const blogCardQuery = graphql`
+  query BlogCardQuery {
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            path
+            title
+            desc
+          }
+          html
+        }
+      }
+    }
+  }
+`;

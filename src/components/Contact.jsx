@@ -24,7 +24,7 @@ const changeErrorValues = {
 
 const emailFormat = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 
-function Contact() {
+export default function Contact() {
   const [formValues, setFormValues] = useState(defaultFormValues);
   const [errorValues, setErrorValues] = useState(defaultErrorValues);
 
@@ -105,5 +105,3 @@ function Contact() {
     </article>
   );
 }
-
-export default Contact;

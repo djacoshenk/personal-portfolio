@@ -1,7 +1,7 @@
 import React from 'react';
 import shortid from 'shortid';
 
-function Commits() {
+export default function Commits() {
   function getRandomColor() {
     const colors = ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
     const randomIndex = Math.floor(Math.random() * colors.length);
@@ -40,5 +40,3 @@ function Commits() {
 
   return <div className='commits'>{commits}</div>;
 }
-
-export default Commits;

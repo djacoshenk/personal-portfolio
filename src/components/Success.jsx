@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Success() {
+export default function Success() {
   return (
     <article className='success-container'>
       <p>Thank you for your form submission!</p>
@@ -8,5 +8,3 @@ function Success() {
     </article>
   );
 }
-
-export default Success;
