@@ -24,6 +24,11 @@ export default function SEO() {
       <meta name='keywords' content={seo.keywords} />
       <meta name='url' content={seo.url} />
       <meta name='image' content={seo.image} />
+      <link
+        href='https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap'
+        rel='stylesheet'
+      />
+      <link rel='icon' href={seo.image} />
     </Helmet>
   );
 }
