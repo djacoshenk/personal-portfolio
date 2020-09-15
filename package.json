@@ -25,6 +25,7 @@
     "gatsby-transformer-remark": "^2.8.32",
     "node-sass": "^4.14.1",
     "prismjs": "^1.21.0",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
@@ -35,7 +36,7 @@
     "develop": "npm run sass && gatsby develop",
     "serve": "gatsby serve",
     "format": "prettier \"./src/**/*.{js,jsx,html,css}\" --write",
-    "lint": "eslint \"./src/**/*.{js,jsx,html,css}\" --quiet",
+    "lint": "eslint \"./src/**/*.{js,jsx}\" --quiet",
     "sass": "node-sass ./src/styles/styles.scss -o ./src/styles/ --quiet"
   },
   "browserslist": {

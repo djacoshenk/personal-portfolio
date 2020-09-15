@@ -1,8 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import shortid from 'shortid';
+
+ProjectCard.propTypes = {
+  title: PropTypes.string,
+  desc: PropTypes.string,
+  tech: PropTypes.array,
+};
 
 export default function ProjectCard({ title, desc, tech }) {
   return (

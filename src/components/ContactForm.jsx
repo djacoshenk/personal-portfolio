@@ -1,4 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+ContactForm.propTypes = {
+  formValues: PropTypes.objectOf(PropTypes.string),
+  errorValues: PropTypes.objectOf(PropTypes.string),
+  handleFormValues: PropTypes.func,
+  handleEmailValidation: PropTypes.func,
+  handleFormValidation: PropTypes.func,
+};
 
 export default function ContactForm({
   formValues,

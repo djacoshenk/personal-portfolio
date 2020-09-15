@@ -1,6 +1,7 @@
 import React from 'react';
-import BlogCard from './BlogCard';
 import { StaticQuery, graphql } from 'gatsby';
+
+import BlogCard from './BlogCard';
 
 export default function Blog() {
   return (
