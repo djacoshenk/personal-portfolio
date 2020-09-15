@@ -18,7 +18,7 @@ export default function Home() {
       <p>
         Hello, my name is <span>Danny Jacoshenk</span>.
       </p>
-      <p>I'm a Front End Developer.</p>
+      <p>I&#39;m a Front End Developer.</p>
       <Commits />
     </article>
   );
