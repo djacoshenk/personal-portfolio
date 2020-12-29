@@ -1,43 +1,34 @@
 {
-  "name": "my-app",
+  "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "@types/react": "^16.9.47",
-    "gatsby": "^2.24.53",
-    "gatsby-link": "^2.4.13",
-    "gatsby-plugin-fontawesome-css": "^1.0.0",
-    "gatsby-plugin-manifest": "^2.4.28",
-    "gatsby-plugin-offline": "^3.2.27",
-    "gatsby-plugin-react-helmet": "^3.3.10",
-    "gatsby-plugin-sass": "^2.3.12",
-    "gatsby-prismjs-dracula": "^0.1.15",
-    "gatsby-remark-highlight-code": "^2.0.0",
-    "gatsby-remark-prismjs": "^3.5.11",
-    "gatsby-source-filesystem": "^2.3.27",
-    "gatsby-transformer-remark": "^2.8.32",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/react": "^17.0.0",
     "node-sass": "^4.14.1",
-    "prismjs": "^1.21.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.1",
+    "react-burger-menu": "^3.0.2",
+    "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-scripts": "3.4.3"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "build": "gatsby build",
-    "develop": "npm run sass && gatsby develop",
-    "serve": "gatsby serve",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "format": "prettier \"./src/**/*.{js,jsx,html,css}\" --write",
-    "lint": "eslint \"./src/**/*.{js,jsx}\" --quiet",
-    "sass": "node-sass ./src/styles/styles.scss -o ./src/styles/ --quiet"
+    "lint": "eslint \"./src/**/*.{js,jsx}\" --quiet"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -53,17 +44,16 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.6.0",
+    "eslint": "^7.16.0",
     "eslint-config-node": "^4.1.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-config-prettier-react": "0.0.24",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-config-prettier-react": "^0.0.24",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-react-hooks": "^4.1.0",
-    "prettier": "^2.1.0",
-    "shortid": "^2.2.15"
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1"
   }
 }
