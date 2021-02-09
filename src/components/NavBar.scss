@@ -1,0 +1,17 @@
+.nav-bar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+
+  .logo {
+    height: 32px;
+    width: 32px;
+
+    @media (min-width: 481px) {
+      height: 64px;
+      width: 64px;
+    }
+  }
+}
