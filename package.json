@@ -6,12 +6,11 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "@types/react": "^17.0.0",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
-    "react-burger-menu": "^3.0.2",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
@@ -20,15 +19,17 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "npm run test -- --coverage",
+    "test:watch": "npm run test --watch",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "test:e2e:run": "start-server-and-test start http://localhost:8080 cy:run",
+    "test:e2e:dev": "start-server-and-test start http://localhost:8080 cy:open",
     "eject": "react-scripts eject",
-    "format": "prettier \"./src/**/*.{js,jsx,html,css}\" --write",
-    "lint": "eslint \"./src/**/*.{js,jsx}\" --quiet"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "format": "prettier --write \"src/**/*.tsx\"",
+    "lint": "eslint \"src/**/*.tsx\"",
+    "tsc": "tsc --noEmit",
+    "tsc:watch": "tsc --noEmit --watch"
   },
   "browserslist": {
     "production": [
@@ -43,17 +44,34 @@
     ]
   },
   "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/jest-axe": "^3.5.1",
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-helmet": "^6.1.0",
+    "@types/react-redux": "^7.1.16",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/testing-library__jest-dom": "^5.9.5",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
     "babel-eslint": "^10.1.0",
+    "cypress": "^6.4.0",
     "eslint": "^7.16.0",
     "eslint-config-node": "^4.1.0",
     "eslint-config-prettier": "^7.1.0",
-    "eslint-config-prettier-react": "^0.0.24",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-jest-dom": "^3.6.5",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.3.0",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.0",
+    "typescript": "^4.1.3"
   }
 }
