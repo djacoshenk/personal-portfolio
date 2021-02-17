@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "types": ["cypress"],
     "target": "esnext",
     "module": "esnext",
     "jsx": "react-jsx",
