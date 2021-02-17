@@ -1,0 +1,21 @@
+.contact-bar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: auto;
+  padding-bottom: 3rem;
+
+  .fab.fa-github {
+    font-size: 2.5rem;
+    color: #333;
+    padding-right: 1.5rem;
+  }
+
+  .fab.fa-linkedin-in {
+    font-size: 2.5rem;
+    color: #333;
+    padding-left: 1.5rem;
+  }
+}
