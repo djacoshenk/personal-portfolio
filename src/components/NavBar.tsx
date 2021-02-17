@@ -1,34 +1,31 @@
 import { useState } from 'react';
+import Switch from 'react-switch';
 
 import logoBlack from 'assets/logo-black.svg';
-import menuBlack from 'assets/menu-black.svg';
 
 import './NavBar.scss';
 
-export const NavBar = () => {
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
+export function NavBar() {
+  const [darkTheme, setDarkTheme] = useState(false);
 
   return (
     <div className='nav-bar-container'>
       <img src={logoBlack} className='logo' alt='logo' />
-      <button
-        className='hamburger-menu'
-        onClick={() => setMenuIsOpen(!menuIsOpen)}
-      >
-        <img src={menuBlack} className='menu-logo' alt='menu-logo' />
-      </button>
-      {menuIsOpen && (
-        <div className='nav-bar-links-mobile'>
-          <a href='#home'>Home</a>
-          <a href='#work'>Work</a>
-          <a href='#contact'>Contact</a>
-        </div>
-      )}
-      <div className='nav-bar-links-dom'>
-        <a href='#home'>Home</a>
-        <a href='#work'>Work</a>
-        <a href='#contact'>Contact</a>
-      </div>
+      <Switch
+        checked={darkTheme}
+        onChange={() => setDarkTheme(!darkTheme)}
+        onColor='#86d3ff'
+        onHandleColor='#2693e6'
+        handleDiameter={30}
+        uncheckedIcon={false}
+        checkedIcon={false}
+        boxShadow='0px 1px 5px rgba(0, 0, 0, 0.6)'
+        activeBoxShadow='0px 0px 1px 10px rgba(0, 0, 0, 0.2)'
+        height={20}
+        width={48}
+        className='react-switch'
+        id='material-switch'
+      />
     </div>
   );
-};
+}

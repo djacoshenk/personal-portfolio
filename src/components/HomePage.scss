@@ -1,9 +1,21 @@
 .home-page-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  font-weight: bold;
-  height: calc(100vh - 48px - 64px - 48px);
-  width: auto;
+  height: calc(100vh - 80px - 88px);
+  width: 100%;
+
+  @media (min-width: 481px) {
+    height: calc(100vh - 88px - 88px);
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 2rem;
+
+    @media (min-width: 481px) {
+      font-size: 3rem;
+    }
+  }
 }
