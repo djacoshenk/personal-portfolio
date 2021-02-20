@@ -1,21 +1,49 @@
 import { useState } from 'react';
 import Switch from 'react-switch';
+import { useSelector, TypedUseSelectorHook, useDispatch } from 'react-redux';
+
+import { setTheme } from 'reducers/themeReducer';
+import { RootState } from 'store/index';
 
 import logoBlack from 'assets/logo-black.svg';
+import logoWhite from 'assets/logo-white.svg';
 
 import './NavBar.scss';
 
+const useTypedSelector: TypedUseSelectorHook<RootState> = useSelector;
+
 export function NavBar() {
-  const [darkTheme, setDarkTheme] = useState(false);
+  const { theme } = useTypedSelector((state) => state.theme);
+  const dispatch = useDispatch();
+  const [checked, setChecked] = useState(false);
+
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      dispatch(setTheme('dark'));
+      setChecked(true);
+      document.body.classList.remove('light');
+      document.body.classList.add('dark');
+    } else {
+      dispatch(setTheme('light'));
+      setChecked(false);
+      document.body.classList.remove('dark');
+      document.body.classList.add('light');
+    }
+  };
 
   return (
     <div className='nav-bar-container'>
-      <img src={logoBlack} className='logo' alt='logo' />
+      <img
+        src={theme === 'light' ? logoBlack : logoWhite}
+        className='logo'
+        alt='logo'
+      />
       <Switch
-        checked={darkTheme}
-        onChange={() => setDarkTheme(!darkTheme)}
-        onColor='#86d3ff'
-        onHandleColor='#2693e6'
+        checked={checked}
+        onChange={toggleTheme}
+        onColor='#fff'
+        onHandleColor='#fff'
+        offHandleColor='#121212'
         handleDiameter={30}
         uncheckedIcon={false}
         checkedIcon={false}
