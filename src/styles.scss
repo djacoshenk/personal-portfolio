@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+$dark-theme-background: #121212;
+$dark-theme-text: #fff;
+
+$light-theme-background: #fff;
+$light-theme-text: #000;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,10 +19,20 @@ body {
   font-size: 16px;
   overflow-x: hidden;
   overflow-y: hidden;
+  color: $light-theme-text;
+  background-color: $light-theme-background;
+}
+
+body.light {
+  color: $light-theme-text;
+  background-color: $light-theme-background;
+}
+
+body.dark {
+  color: $dark-theme-text;
+  background-color: $dark-theme-background;
 }
 
 html {
-  color: #333;
-  scroll-behavior: smooth;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
