@@ -1,3 +1,5 @@
+@import '../styles.scss';
+
 .contact-bar-container {
   display: flex;
   flex-direction: row;
@@ -7,15 +9,20 @@
   width: auto;
   padding-bottom: 2rem;
 
-  .fab.fa-github {
+  .fab.fa-github,
+  .fab.fa-linkedin-in {
     font-size: 2rem;
-    color: #333;
+    color: $light-theme-text;
     padding-right: 1rem;
   }
 
-  .fab.fa-linkedin-in {
-    font-size: 2rem;
-    color: #333;
-    padding-left: 1rem;
+  .fab.fa-github.light,
+  .fab.fa-linkedin-in.light {
+    color: $light-theme-text;
+  }
+
+  .fab.fa-github.dark,
+  .fab.fa-linkedin-in.dark {
+    color: $dark-theme-text;
   }
 }
