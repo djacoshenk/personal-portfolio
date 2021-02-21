@@ -11,14 +11,20 @@ export const ContactBar = () => {
 
   return (
     <div className='contact-bar-container'>
-      <a href='https://github.com/djacoshenk' target='_blank' rel='noreferrer'>
+      <a
+        aria-label='github-logo-link'
+        href='https://github.com/djacoshenk'
+        target='_blank'
+        rel='noreferrer'
+      >
         {theme === 'light' ? (
-          <i id='github-logo' className='fab fa-github light'></i>
+          <i className='fab fa-github light'></i>
         ) : (
-          <i id='github-logo' className='fab fa-github dark'></i>
+          <i className='fab fa-github dark'></i>
         )}
       </a>
       <a
+        aria-label='linkedin-logo-link'
         href='https://linkedin.com/in/djacoshenk'
         target='_blank'
         rel='noreferrer'
