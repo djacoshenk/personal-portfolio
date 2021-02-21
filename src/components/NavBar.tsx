@@ -36,9 +36,10 @@ export function NavBar() {
       <img
         src={theme === 'light' ? logoBlack : logoWhite}
         className='logo'
-        alt='logo'
+        alt={theme === 'light' ? 'logo-light' : 'logo-dark'}
       />
       <Switch
+        aria-label='theme-toggle'
         checked={checked}
         onChange={toggleTheme}
         onColor='#fff'
