@@ -18,9 +18,9 @@ export const ContactBar = () => {
         rel='noreferrer'
       >
         {theme === 'light' ? (
-          <i className='fab fa-github light'></i>
+          <i title='github-logo-light' className='fab fa-github light'></i>
         ) : (
-          <i className='fab fa-github dark'></i>
+          <i title='github-logo-dark' className='fab fa-github dark'></i>
         )}
       </a>
       <a
@@ -30,9 +30,12 @@ export const ContactBar = () => {
         rel='noreferrer'
       >
         {theme === 'light' ? (
-          <i id='linkedin-logo' className='fab fa-linkedin-in light'></i>
+          <i
+            title='linkedin-logo-light'
+            className='fab fa-linkedin-in light'
+          ></i>
         ) : (
-          <i id='linkedin-logo' className='fab fa-linkedin-in dark'></i>
+          <i title='linkedin-logo-dark' className='fab fa-linkedin-in dark'></i>
         )}
       </a>
     </div>
