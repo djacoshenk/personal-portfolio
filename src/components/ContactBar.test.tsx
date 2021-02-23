@@ -18,7 +18,7 @@ test('component is accessible', async () => {
   expect(results).toHaveNoViolations();
 });
 
-test('component renders social links', () => {
+test('component renders social links and icons', () => {
   render(
     <Provider store={store}>
       <ContactBar />
@@ -27,4 +27,7 @@ test('component renders social links', () => {
 
   expect(screen.getByRole('link', { name: /github/i })).toBeInTheDocument();
   expect(screen.getByRole('link', { name: /linkedin/i })).toBeInTheDocument();
+
+  expect(screen.getByTitle(/github-logo-light/i)).toBeInTheDocument();
+  expect(screen.getByTitle(/linkedin-logo-light/i)).toBeInTheDocument();
 });
