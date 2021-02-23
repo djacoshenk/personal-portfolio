@@ -39,7 +39,11 @@ test('component changes theme', () => {
     </Provider>
   );
 
+  expect(screen.getByRole('img', { name: /logo-light/i })).toBeInTheDocument();
+  expect(screen.queryByRole('img', { name: /logo-dark/i })).toBeNull();
+
   userEvent.click(screen.getByRole('switch', { name: /theme-toggle/i }));
-  expect(screen.getByRole('img', { name: /logo-dark/i })).toBeInTheDocument();
+
   expect(screen.queryByRole('img', { name: /logo-light/i })).toBeNull();
+  expect(screen.getByRole('img', { name: /logo-dark/i })).toBeInTheDocument();
 });
