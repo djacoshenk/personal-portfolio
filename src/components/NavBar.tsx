@@ -1,60 +1,39 @@
 import { useState } from 'react';
-import Switch from 'react-switch';
-import { useSelector, TypedUseSelectorHook, useDispatch } from 'react-redux';
+import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi';
+import { HashLink } from 'react-router-hash-link';
 
-import { setTheme } from 'reducers/themeReducer';
-import { RootState } from 'store/index';
+import { ReactComponent as Logo } from 'assets/logo.svg';
 
-import logoBlack from 'assets/logo-black.svg';
-import logoWhite from 'assets/logo-white.svg';
-
-import './NavBar.scss';
-
-const useTypedSelector: TypedUseSelectorHook<RootState> = useSelector;
+import 'components/NavBar.css';
 
 export function NavBar() {
-  const { theme } = useTypedSelector((state) => state.theme);
-  const dispatch = useDispatch();
-  const [checked, setChecked] = useState(false);
-
-  const toggleTheme = () => {
-    if (theme === 'light') {
-      dispatch(setTheme('dark'));
-      setChecked(true);
-      document.body.classList.remove('light');
-      document.body.classList.add('dark');
-    } else {
-      dispatch(setTheme('light'));
-      setChecked(false);
-      document.body.classList.remove('dark');
-      document.body.classList.add('light');
-    }
-  };
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   return (
-    <div className='nav-bar-container'>
-      <img
-        src={theme === 'light' ? logoBlack : logoWhite}
-        className='logo'
-        alt={theme === 'light' ? 'logo-light' : 'logo-dark'}
-      />
-      <Switch
-        aria-label='theme-toggle'
-        checked={checked}
-        onChange={toggleTheme}
-        onColor='#fff'
-        onHandleColor='#fff'
-        offHandleColor='#121212'
-        handleDiameter={30}
-        uncheckedIcon={false}
-        checkedIcon={false}
-        boxShadow='0px 1px 5px rgba(0, 0, 0, 0.6)'
-        activeBoxShadow='0px 0px 1px 10px rgba(0, 0, 0, 0.2)'
-        height={20}
-        width={48}
-        className='react-switch'
-        id='material-switch'
-      />
-    </div>
+    <nav className='nav-bar-container'>
+      <div className='nav-bar-logo-container'>
+        <Logo height={32} width={32} />
+        <h1 className='nav-bar-logo-title'>Hi, I&apos;m Danny</h1>
+      </div>
+      <button
+        className={
+          menuIsOpen ? 'nav-bar-burger-menu active' : 'nav-bar-burger-menu'
+        }
+        onClick={() => setMenuIsOpen(!menuIsOpen)}
+      >
+        {menuIsOpen ? <HiOutlineX size={32} /> : <HiOutlineMenu size={32} />}
+      </button>
+      <div className={menuIsOpen ? 'nav-bar-links mobile' : 'nav-bar-links'}>
+        <HashLink className='nav-bar-link' to='/#work' smooth>
+          Work
+        </HashLink>
+        <HashLink className='nav-bar-link' to='/#about' smooth>
+          About
+        </HashLink>
+        <HashLink className='nav-bar-link' to='/#contact' smooth>
+          Contact
+        </HashLink>
+      </div>
+    </nav>
   );
 }
