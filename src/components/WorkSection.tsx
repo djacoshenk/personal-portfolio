@@ -100,13 +100,67 @@ const LOGOS = [
 const PROJECTS = [
   {
     title: 'Plan Check',
-    info: `Plan Check is a web application that provides plan check services to developers and engineers. The project was started after I spent a few years in the civil engineering industry and noticed many problems with the process of obtaining design approval from government agencies. I decided to create a user dashboard to aid with project tracking across multiple agencies and implement features to help with communication between the project applicant and reviewer.`,
-    live_path: '#',
-    code_path: '#',
+    info:
+      'Plan Check is a web application that provides plan check services to developers and engineers. The project was started after I spent a few years in the civil engineering industry and noticed many problems with the process of obtaining design approval from government agencies. I decided to create a user dashboard to aide with project tracking across multiple agencies and implement features to help with communication between the project applicant and reviewer.',
+    tech: [
+      {
+        icon: SiHtml5,
+        color: '#ffb86c',
+      },
+      {
+        icon: SiCss3,
+        color: '#8be9fd',
+      },
+      {
+        icon: SiTypescript,
+        color: '#8be9fd',
+      },
+      {
+        icon: SiReact,
+        color: '#8be9fd',
+      },
+      {
+        icon: SiRedux,
+        color: '#bd93f9',
+      },
+      {
+        icon: SiFirebase,
+        color: '#ffb86c',
+      },
+    ],
+    live_path: 'https://weplancheck.com/',
+    code_path: 'https://github.com/djacoshenk/plan-check',
   },
   {
     title: 'Wunderlist',
-    info: `Wunderlist started initially as challenge for myself to see if I could consume REST APIs and display the returned data in the UI. After achieving this, I started adding new features, such as paginated results with Intersection Observer API, an autocomplete search bar with Downshift, and user authenticated sign up/sign in forms with Firebase. This project eventually became the foundation for which I would teach myself modern frontend tech, such as TypeScript, Redux, Jest, React Testing Library, and Cypress.`,
+    info:
+      'Wunderlist started initially as challenge for myself to see if I could consume REST APIs and display the returned data in the UI. After achieving this, I started adding new features, such as paginated results with Intersection Observer API, an autocomplete search bar with Downshift, and user authenticated sign up/sign in forms with Firebase. This project eventually became the foundation for which I would teach myself modern frontend tech, such as TypeScript, Redux, Jest, React Testing Library, and Cypress.',
+    tech: [
+      {
+        icon: SiHtml5,
+        color: '#ffb86c',
+      },
+      {
+        icon: SiSass,
+        color: '#ff79c6',
+      },
+      {
+        icon: SiTypescript,
+        color: '#8be9fd',
+      },
+      {
+        icon: SiReact,
+        color: '#8be9fd',
+      },
+      {
+        icon: SiRedux,
+        color: '#bd93f9',
+      },
+      {
+        icon: SiFirebase,
+        color: '#ffb86c',
+      },
+    ],
     live_path: 'https://wunderlist.me/',
     code_path: 'https://github.com/djacoshenk/wunderlist',
   },
@@ -148,6 +202,18 @@ export function WorkSection() {
                 <div key={index} className='work-project-card'>
                   <h4 className='work-project-title'>{proj.title}</h4>
                   <p className='work-project-info'>{proj.info}</p>
+                  <div className='work-project-tech-logos'>
+                    {proj.tech.map((logo, index) => {
+                      return (
+                        <logo.icon
+                          key={index}
+                          className='work-project-tech-logo'
+                          size={32}
+                          color={logo.color}
+                        />
+                      );
+                    })}
+                  </div>
                   <div className='work-links'>
                     <div className='work-link-container'>
                       <a

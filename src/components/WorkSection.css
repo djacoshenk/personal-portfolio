@@ -120,9 +120,15 @@
 
 .work-project-info {
   color: #f8f8f2;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin: 1rem 0rem;
   line-height: 1.5rem;
+}
+
+.work-project-tech-logos {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  justify-items: center;
+  width: 100%;
 }
 
 .work-links {
@@ -167,12 +173,8 @@
     height: auto;
   }
 
-  .work-project-info {
-    margin-bottom: 0rem;
-  }
-
   .work-project-card {
-    height: 500px;
+    height: 550px;
     width: 350px;
     margin: 0.5rem;
   }
@@ -216,12 +218,6 @@
     justify-content: center;
   }
 
-  .work-project-card {
-    height: 500px;
-    width: 350px;
-    margin: 0.5rem;
-  }
-
   .work-links {
     display: flex;
     flex-direction: column;
@@ -236,10 +232,6 @@
 }
 
 @media (min-width: 1025px) {
-  .work-container {
-    height: 100vh;
-  }
-
   .work-main {
     display: flex;
     flex-direction: row;
@@ -250,7 +242,6 @@
   .work-tech-container {
     justify-content: flex-start;
     height: auto;
-    margin-top: 3rem;
   }
 
   .work-tech-logos {
@@ -260,7 +251,6 @@
   .work-projects-container {
     justify-content: flex-start;
     height: auto;
-    margin-top: 3rem;
   }
 
   .work-projects {
