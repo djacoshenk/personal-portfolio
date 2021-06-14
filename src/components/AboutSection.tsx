@@ -15,8 +15,8 @@ export function AboutSection() {
             Hi, I&apos;m Danny! I&apos;m a Frontend Developer, wannabe surfer,
             father of house plants, and former Civil Engineer with 5 years of
             experience designing mixed-use development projects. I&apos;m
-            passionate about learning frontend languages/frameworks and have
-            spent the part year developing web applications with TypeScript and
+            passionate about learning frontend languages/frameworks and have +1
+            years experience developing web applications with TypeScript and
             React. I enjoy the problem sovling challenges of frontend
             development and always seek creative solutions.
           </p>

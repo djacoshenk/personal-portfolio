@@ -87,7 +87,7 @@
   }
 
   .about-card {
-    height: 200px;
+    height: auto;
     width: 500px;
   }
 }
