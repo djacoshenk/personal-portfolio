@@ -124,13 +124,3 @@ textarea {
     width: 400px;
   }
 }
-
-@media (min-width: 1025px) {
-  .contact-container {
-    height: 100vh;
-  }
-
-  .contact-form-container {
-    height: calc(100vh - 67px - 71px);
-  }
-}
