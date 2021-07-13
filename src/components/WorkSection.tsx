@@ -101,8 +101,8 @@ const PROJECTS = [
   {
     title: 'Plan Check',
     info: `Plan Check is a web application that provides plan check services to developers and engineers. The project was started after I spent a few years in the civil engineering industry and noticed many problems with the process of obtaining design approval from government agencies. I decided to create a user dashboard to aid with project tracking across multiple agencies and implement features to help with communication between the project applicant and reviewer.`,
-    live_path: '#',
-    code_path: '#',
+    live_path: 'https://weplancheck.com/',
+    code_path: 'https://github.com/djacoshenk/plan-check',
   },
   {
     title: 'Wunderlist',
