@@ -1,39 +1,15 @@
-import { useState } from 'react';
-import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi';
-import { HashLink } from 'react-router-hash-link';
+import { Link } from "react-router-dom";
 
-import { ReactComponent as Logo } from 'assets/logo.svg';
+import { ReactComponent as Logo } from "assets/Logo.svg";
 
-import 'components/NavBar.css';
-
-export function NavBar() {
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
-
+export const NavBar = () => {
   return (
-    <nav className='nav-bar-container'>
-      <div className='nav-bar-logo-container'>
-        <Logo height={32} width={32} />
-        <h1 className='nav-bar-logo-title'>Hi, I&apos;m Danny</h1>
+    <div className="relative w-full">
+      <div className="w-full flex items-center justify-between px-4 py-6 bg-gray-900">
+        <Link to="/" className="transition duration-500 ease-in-out">
+          <Logo height={32} width={32} />
+        </Link>
       </div>
-      <button
-        className={
-          menuIsOpen ? 'nav-bar-burger-menu active' : 'nav-bar-burger-menu'
-        }
-        onClick={() => setMenuIsOpen(!menuIsOpen)}
-      >
-        {menuIsOpen ? <HiOutlineX size={32} /> : <HiOutlineMenu size={32} />}
-      </button>
-      <div className={menuIsOpen ? 'nav-bar-links mobile' : 'nav-bar-links'}>
-        <HashLink className='nav-bar-link' to='/#work' smooth>
-          Work
-        </HashLink>
-        <HashLink className='nav-bar-link' to='/#about' smooth>
-          About
-        </HashLink>
-        <HashLink className='nav-bar-link' to='/#contact' smooth>
-          Contact
-        </HashLink>
-      </div>
-    </nav>
+    </div>
   );
-}
+};
